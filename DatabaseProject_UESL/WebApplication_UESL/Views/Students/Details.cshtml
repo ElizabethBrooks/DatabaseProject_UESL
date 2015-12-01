@@ -67,6 +67,46 @@
         </dd>
 
     </dl>
+    <table class="table">
+        <tr>
+            <th>
+                Catalog Number
+            </th>
+            <th>
+                Class Name
+            </th>
+            <th>
+               Section Number
+            </th>
+            <th>
+                Instructor
+            </th>
+            <th>
+                Meet Time
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Enrollments)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Course.CatalogNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Course.ClassName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Course.SectionNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Course.Instructor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Course.MeetTime)
+                </td>
+            </tr>
+        }
+    </table>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.UniqueRecordID }) |

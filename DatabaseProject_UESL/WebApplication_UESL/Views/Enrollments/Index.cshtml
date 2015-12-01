@@ -12,10 +12,16 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Course.CatalogNumber)
+            Catalog Number
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Student.FirstName)
+            Student ID
+        </th>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
         </th>
         <th></th>
     </tr>
@@ -26,7 +32,13 @@
             @Html.DisplayFor(modelItem => item.Course.CatalogNumber)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Student.StudentID)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Student.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.LastName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.EnrollmentID }) |

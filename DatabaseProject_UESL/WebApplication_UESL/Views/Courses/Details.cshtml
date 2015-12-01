@@ -51,6 +51,52 @@
         </dd>
 
     </dl>
+    <table class="table">
+        <tr>
+            <th>
+                Student ID
+            </th>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Letter Grade
+            </th>
+            <th>
+                Placement
+            </th>
+            <th>
+                Quarter Of Placement
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Enrollments)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student.StudentID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student.LetterGrade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student.Placement)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student.QuarterOfPlacement)
+                </td>
+            </tr>
+        }
+    </table>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ClassRecordID }) |
