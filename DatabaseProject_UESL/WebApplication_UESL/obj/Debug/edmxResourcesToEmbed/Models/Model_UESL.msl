@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseProject_UESLModelStoreContainer" CdmEntityContainer="DatabaseProject_UESLEntities">
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="DatabaseProject_UESLModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="ClassRecordID" ColumnName="ClassRecordID" />
+          <ScalarProperty Name="CatalogNumber" ColumnName="CatalogNumber" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
+          <ScalarProperty Name="Instructor" ColumnName="Instructor" />
+          <ScalarProperty Name="MeetTime" ColumnName="MeetTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enrollments">
+      <EntityTypeMapping TypeName="DatabaseProject_UESLModel.Enrollment">
+        <MappingFragment StoreEntitySet="Enrollment">
+          <ScalarProperty Name="EnrollmentID" ColumnName="EnrollmentID" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="DatabaseProject_UESLModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="UniqueRecordID" ColumnName="UniqueRecordID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LetterGrade" ColumnName="LetterGrade" />
+          <ScalarProperty Name="Placement" ColumnName="Placement" />
+          <ScalarProperty Name="QuarterOfPlacement" ColumnName="QuarterOfPlacement" />
+          <ScalarProperty Name="CourseCatalogNumber" ColumnName="CourseCatalogNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,58 @@
+﻿@model WebApplication_UESL.Models.Course
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CatalogNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatalogNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SectionNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SectionNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instructor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instructor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeetTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeetTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClassRecordID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

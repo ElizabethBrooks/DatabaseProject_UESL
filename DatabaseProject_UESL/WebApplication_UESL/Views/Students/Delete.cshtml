@@ -1,0 +1,80 @@
+﻿@model WebApplication_UESL.Models.Student
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterGrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LetterGrade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Placement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Placement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuarterOfPlacement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuarterOfPlacement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseCatalogNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseCatalogNumber)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>UESL Web Application</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <div>
+        @Html.ActionLink("List of students", "Index", "Students")<br />
+        @Html.ActionLink("List of courses", "Index", "Courses")<br />
+        @Html.ActionLink("List of enrollments", "Index", "Enrollments")
+    </div>
+</div>

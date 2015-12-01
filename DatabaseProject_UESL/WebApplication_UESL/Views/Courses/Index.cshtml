@@ -1,0 +1,57 @@
+﻿@model IEnumerable<WebApplication_UESL.Models.Course>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CatalogNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SectionNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Instructor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeetTime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CatalogNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SectionNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Instructor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeetTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ClassRecordID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ClassRecordID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ClassRecordID })
+        </td>
+    </tr>
+}
+
+</table>

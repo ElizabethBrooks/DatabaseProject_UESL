@@ -1,0 +1,5 @@
+C:\Users\brookse\Desktop\GitHub\DatabaseProject_UESL\DatabaseProject_UESL\DatabaseProject_UESL\bin\Debug\DatabaseProject_UESL.dacpac
+C:\Users\brookse\Desktop\GitHub\DatabaseProject_UESL\DatabaseProject_UESL\DatabaseProject_UESL\bin\Debug\DatabaseProject_UESL.dll
+C:\Users\brookse\Desktop\GitHub\DatabaseProject_UESL\DatabaseProject_UESL\DatabaseProject_UESL\bin\Debug\DatabaseProject_UESL.pdb
+C:\Users\brookse\Desktop\GitHub\DatabaseProject_UESL\DatabaseProject_UESL\DatabaseProject_UESL\obj\Debug\DatabaseProject_UESL.dll
+C:\Users\brookse\Desktop\GitHub\DatabaseProject_UESL\DatabaseProject_UESL\DatabaseProject_UESL\obj\Debug\DatabaseProject_UESL.pdb

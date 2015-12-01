@@ -1,0 +1,74 @@
+﻿@model WebApplication_UESL.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterGrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LetterGrade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Placement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Placement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuarterOfPlacement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuarterOfPlacement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseCatalogNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseCatalogNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UniqueRecordID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
